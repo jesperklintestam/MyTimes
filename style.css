@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  font-family: Georgia;
+  font-size: 17px;
 }
 
 header {
@@ -19,6 +21,15 @@ header {
 
 header nav {
   padding-right: 40px;
+}
+
+nav span {
+  padding: 20px 10px;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0;
 }
 
 .logo {
@@ -48,7 +59,7 @@ a {
 }
 
 .column.large {
-  width: 630px;
+  width: 662px;
   display: flex;
   flex-direction: column;
   margin-right: 32px;
@@ -70,6 +81,108 @@ a {
 
 }
 
-div {
-  border: 2px solid black;
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.story-column {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.lead-story .image-content span {
+  margin-left: 20px;
+}
+
+.stories .story-text {
+  height: 250px;
+}
+
+.image-content {
+  display: flex;
+  height: 300px;
+  font-family: Georgia;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.lead-story .image-content {
+  background-image: url("./resources/images/img-story-main.png");
+  font-size: 40px;
+  margin-top: 0px;
+  text-align: left;
+  width: 630px;
+}
+
+.story-1 .image-content {
+  background-image: url("./resources/images/img-story-2.png");
+}
+
+.story-2 .image-content {
+  background-image: url("./resources/images/img-story-3.png");
+}
+
+.story-3 .image-content {
+  background-image: url("./resources/images/img-story-1.png");
+}
+
+.news-bites {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-bites h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 41px;
+}
+
+.news-bites span {
+  border-bottom: 1px solid black;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  padding: 11px 20px;
+}
+
+footer {
+  width: 100%;
+  height: 325px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  flex-direction: column;
+}
+
+footer span {
+  display: inline-block;
+}
+
+footer nav {
+  display: inline-block;
+  padding-left: 25px;
+}
+
+.title {
+  border-right: 2px solid white;
+  padding-right: 25px;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
 }
